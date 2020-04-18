@@ -1,0 +1,83 @@
+style "Default"
+{
+	fg[NORMAL]        	= "#000000"
+	fg[PRELIGHT]      	= "#000000" 
+	fg[SELECTED]      	= "#FFFFFF"
+	fg[ACTIVE]        	= "#000000" 
+	fg[INSENSITIVE]   	= "#8F8D88" #0.7
+
+	bg[NORMAL]			= "#CCC9C2" #1.0
+	bg[PRELIGHT]      	= "#E0DDD5" #1.1
+	bg[SELECTED] 	  	= "#4B6983" #C
+	bg[ACTIVE]  	  	= "#B8B5AF" #0.9
+	bg[INSENSITIVE]   	= "#CCC9C2" #1.0
+
+	base[NORMAL]      	= "#FFFFFF" 
+	base[PRELIGHT]    	= "#FFFFFF"
+	base[SELECTED]    	= "#4B6983" #C
+	base[ACTIVE]     	= "#8F8D88" #0.7
+	base[INSENSITIVE]  	= "#E0DDD5" #1.1
+
+	text[NORMAL]		= "#000000" 
+	text[PRELIGHT]		= "#000000"
+	text[SELECTED]		= "#FFFFFF" 
+	text[ACTIVE]		= "#FFFFFF" 
+	text[INSENSITIVE]	= "#8F8D88" #0.7
+
+	GtkWidget::link-color				= "#000080"
+	GtkWidget::visited-link-color		= "#000080"
+	GtkHTML::alink_color				= "#000080"
+	GtkHTML::link_color					= "#000080"
+	GtkHTML::vlink_color				= "#000080"
+	GnomeHref::link_color				= "#000080"
+	GtkIMHtml::hyperlink-color			= "#000080"
+	GtkIMHtml::hyperlink-prelight-color	= "#000080"
+}
+
+style "Colored"
+{
+	fg[PRELIGHT]      	= "#FFFFFF"
+	
+	bg[NORMAL] 			= "#B8B5AF" #0.9
+	bg[PRELIGHT]      	= "#4B6983" #C
+
+	text[PRELIGHT]    	= "#FFFFFF"
+}
+
+style "MenuItem" #required for QGtkStyle active menu item
+{
+	fg[PRELIGHT]      	= "#FFFFFF"
+	
+	bg[NORMAL] 			= "#B8B5AF" #0.9
+	bg[PRELIGHT]      	= "#4B6983" #C
+
+	text[PRELIGHT]    	= "#FFFFFF"
+
+  	engine "pixmap"
+	{
+		image
+		{
+			function    = BOX
+			state       = PRELIGHT
+			file        = "assets/menubar-item-active.png"
+			border      = {0, 0, 0, 0}
+    	}
+  	}
+}
+
+style "xfdesktop-icon-view" {
+XfdesktopIconView::label-alpha = 0
+fg[NORMAL] = "#ffffff"
+fg[SELECTED] = "#ffffff"
+fg[ACTIVE] = "#ffffff"
+}
+widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
+
+widget_class "*" style "Default"
+#widget_class "*ComboBox*" style "Default"
+#widget_class "*Button*" style "Default"
+#widget_class "*Scroll*" style "Default"
+#widget_class "*Menu*" style "Default"
+widget_class "*ProgressBar*" style "Colored"
+widget_class "*MenuItem*" style "MenuItem"
+#widget_class "*ComboBoxEntry*" style "Colored"

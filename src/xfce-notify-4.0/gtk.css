@@ -1,0 +1,52 @@
+@define-color default_bg_normal 		#CCC9C2;
+@define-color default_bg_prelight 		#E0DDD5;
+@define-color default_bg_selected 		#4B6983;
+@define-color default_bg_active 		#B8B5AF;
+@define-color default_bg_insensitive 	#CCC9C2;
+
+#XfceNotifyWindow {
+    background-color: @default_bg_normal;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding: 20px;
+}
+
+#XfceNotifyWindow:hover {
+}
+
+#XfceNotifyWindow label,
+#XfceNotifyWindow image {
+    color: #000000;
+}
+
+#XfceNotifyWindow label#summary {
+    font-weight: Bold;
+}
+
+#XfceNotifyWindow button {
+	background: @default_bg_normal;
+	border-image: url("assets/button.png") 2 / 2px stretch;
+	padding: 5px;
+}
+
+#XfceNotifyWindow button:hover {
+    background-color: @default_bg_prelight;
+	color: @default_fg_prelight;
+}
+
+#XfceNotifyWindow progressbar {
+    font-size: .8em;
+}
+
+#XfceNotifyWindow progressbar progress {
+    background: @colored_bg_prelight;
+	border-image: url("assets/progress.png") 2 / 2px stretch;
+	color: @colored_fg_normal;
+}
+
+#XfceNotifyWindow progressbar trough {
+    background: @colored_bg_normal;
+	border: solid 1px shade(@default_bg_normal, 0.7);
+	border-bottom: solid 1px shade(@default_bg_normal, 1.3);
+	border-right: solid 1px shade(@default_bg_normal, 1.3);
+}

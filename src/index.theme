@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Greyleigh
+Version=v1.0
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Greyleigh
+IconTheme=elementary-xfce
+CursorTheme=Vanilla-DMZ
+ButtonLayout=:minimize,maximize,close
+
