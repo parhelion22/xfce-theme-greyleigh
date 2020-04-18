@@ -9,7 +9,7 @@ The GTK3 part is based on [raleigh-reloaded](https://github.com/vlastavesely/ral
 
 This project also includes a theme for the XFCE Window Manager (xfwm4), which is based on the "Redmond" theme, as well as a theme for the XFCE notification system (xfce-notify-4.0).
 
-Developed on [Manjaro Linux](https://manjaro.org/) running the [XFCE desktop environment](https://www.xfce.org/).
+Developed on Arch-based [Manjaro Linux](https://manjaro.org/) running the [XFCE desktop environment](https://www.xfce.org/).
 
 # License
 
