@@ -12,4 +12,4 @@ This project also includes a theme for the XFCE Window Manager (xfwm4), which is
 
 # License
 
-This project is licensed under the [GPLv2 License](/LICENSE).
+This project is licensed under the [GNU General Public License v3.0](/LICENSE).
