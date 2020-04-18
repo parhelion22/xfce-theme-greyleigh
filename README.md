@@ -1,6 +1,6 @@
 # Greyleigh GTK theme
 
-![Screenshot](https://github.com/BlueWhiteCard/xfce-theme-greyleigh/blob/master/Screenshot.png)
+![Screenshot](https://github.com/parhelion22/xfce-theme-greyleigh/blob/master/Screenshot.png)
 
 GTK theme providing a consistent look for GTK2 and GTK3, based on the classic "Raleigh" theme.
 
