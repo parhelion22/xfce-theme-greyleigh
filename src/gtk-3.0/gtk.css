@@ -1221,7 +1221,7 @@ XfdesktopIconView.view .rubberband {
 .lightdm-gtk-greeter #login_window,
 .lightdm-gtk-greeter #shutdown_dialog,
 .lightdm-gtk-greeter #restart_dialog {
-	border-image: url("assets/window-decoration.png") 2 / 2px stretch; /* 25 / 25px stretch; */
+	border-image: url("assets/window-decoration.png") 25 / 25px stretch;
 	background-color: @default_bg_normal;
 	color: @default_fg_normal;
 }
