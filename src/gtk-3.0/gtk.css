@@ -553,6 +553,7 @@ toolbar {
 	padding: 2px;
 }
 toolbar separator {
+    background-color: #00ff00;
 	border-image: url("assets/separator-vertical.png") 1 / 1px stretch;
 	margin: 6px;
 	padding: 1px;
