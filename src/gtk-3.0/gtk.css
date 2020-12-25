@@ -1128,7 +1128,8 @@ XfdesktopIconView.view {
 }
 
 XfdesktopIconView.view:active {
-    	background: @default_bg_selected;
+    background: @default_bg_selected;
+    border: 1px solid #00ff00;
 }
 
 /*
